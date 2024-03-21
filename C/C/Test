@@ -1,0 +1,9 @@
+void printList(list *head) {
+    list *temp = head; // Cria um nó temporário para percorrer a lista
+    printf("Lista: ");
+    while (temp != NULL) { // Enquanto não chegar ao final da lista
+        printf("%d ", temp->info); // Imprime o dado do nó atual
+        temp = temp->next; // Avança para o próximo nó
+    }
+    printf("\n");
+}
